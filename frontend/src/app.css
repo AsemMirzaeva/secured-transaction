@@ -1,0 +1,98 @@
+:root {
+  --bg: #0f1720;
+  --surface: #17212c;
+  --border: #263340;
+  --text: #e7edf3;
+  --text-muted: #8fa1b3;
+  --accent: #2f8f6e;
+  --danger: #d9534f;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.auth-card,
+.payment-form,
+.payment-status,
+.verification-prompt {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  width: 100%;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.link-button {
+  width: auto;
+  background: none;
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: -0.4rem 0 0.75rem;
+}
+
+.video-kyc-room {
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+}
